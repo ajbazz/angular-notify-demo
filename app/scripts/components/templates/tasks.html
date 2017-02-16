@@ -1,0 +1,7 @@
+<li class="list-group-item msg-item" ng-repeat="item in $ctrl.data track by $index" >
+	<div>{{ item.when }}</div>
+	<div>{{item.msg}}
+	<a ng-href="{{item.task}}" ng-if="item.type=='task'"> > View Task</a>
+	<a ng-href="${item.linkURL}" ng-if="item.type=='notification'"> > {{item.linkText}}</a>
+	</div>
+</li>

@@ -1,0 +1,18 @@
+<div class="notifier">
+	
+	<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading text-left"><h3>{{date | date:'EEEE MMM d, y'}}</h3></div>
+	  <div class="panel-body">
+	    <ul class="list-group">
+		  <li class="list-group-item msg-headers"><span class="totals">{{numTask}}</span> <span>Assigned <span ng-if="numTask == 1">Task</span><span ng-if="numTask != 1">Tasks</span>
+		  	<div><span class="totals">{{numRemind}}</span> <span ng-if="numRemind == 1">Reminder</span><span ng-if="numRemind !=1">Reminders</span></div>
+		  	<div><span class="totals">{{numNotify}}</span> <span ng-if="numNotify == 1">Notification</span><span ng-if="numNotify != 1">Notifications</span></div>
+		  </li>
+		  <assigned-tasks data="{{msgData}}"></assigned-tasks>
+	  	</ul>
+	  </div>
+	 </div>
+	  
+	
+</div>
